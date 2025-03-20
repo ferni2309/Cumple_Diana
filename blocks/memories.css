@@ -38,6 +38,6 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .Memories__photo {
-    max-width: 100px;
+    max-width: 50px;
   }
 }
