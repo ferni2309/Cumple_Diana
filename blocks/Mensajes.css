@@ -1,0 +1,16 @@
+.Mensajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.Mensajes__imagen {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.Mensajes__paragraph {
+  font-size: 50px;
+}
