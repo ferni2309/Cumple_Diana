@@ -26,18 +26,18 @@
 
 @media screen and (max-width: 768px) {
   .Memories {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(minmax(150px, 1fr));
   }
   .Memories__photo {
-    max-width: 150px;
+    max-width: 250px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .Memories {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(minmax(100px, 1fr));
   }
   .Memories__photo {
-    max-width: 50px;
+    max-width: 200px;
   }
 }
