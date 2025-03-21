@@ -1,10 +1,11 @@
 .Memories {
   display: grid;
   justify-items: center;
+  align-items: center;
   grid-template-rows: auto 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
-  max-width: 900px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -17,25 +18,44 @@
 }
 
 .Memories__photo {
-  width: 250px;
+  width: 400px;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .Memories {
-    grid-template-columns: repeat(minmax(150px, 1fr));
+    grid-template-columns: auto;
+  }
+  .Memories__subheading {
+    grid-column: span 2;
+    font-size: 15px;
   }
   .Memories__photo {
-    max-width: 250px;
+    max-width: 300px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .Memories {
-    grid-template-columns: repeat(minmax(100px, 1fr));
+    grid-template-columns: 1fr;
+  }
+
+  .Memories__photo {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .Memories {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .Memories__subheading {
+    grid-column: span 1;
+    font-size: 15px;
   }
   .Memories__photo {
     max-width: 200px;
